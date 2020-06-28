@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+/* The wrapper contains all of the page's content besides the footer */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+  background-image: url("../images/1459.jpg");
+}
+
+.nav-link:hover {
+  color: rgb(3, 14, 34) !important;
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: rgb(3, 14, 34) !important;
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 5px;
+  margin: 0;
+  background-color:  rgb(0, 52, 75); 
+} 
+
+/* This CSS styles the ufo icon in the navbar */
+.nav-ufo {
+  position: absolute;
+  bottom: 5px;
+  left: 150px;
+  width: 35px;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  list-style: none;
+  margin: auto;
+  font-size: 16px;
+  margin-top: 8px;
+
+}
+.hero {
+  position: relative;
+  height: 550px;
+  padding: 20px;
+  margin: 20px;
+  background: transparent;
+}
+
+.hero h1 {
+  margin-top: 100px;
+  font-size: 0.1rem;
+  animation: title 1.2s forwards linear;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: calc(18px + 5vw);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.15em #c3ebf5;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.009em);
+}
+
+#ufo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel, .filter, .panel-heading {
+  background-color: transparent !important;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.table{
+  margin-top: 35px;
+  background-color: rgba(0, 0, 0, 0.5) !important; 
+  padding: 20px 20px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  box-shadow:
+    0 0 5px 5px #fff,
+    0 0 25px 30px rgb(243, 196, 243),
+    0 0 75px 30px #0ff;
+  border-radius: 5px;
+}
+
+aside {
+  padding-top: 20px;
+  margin-left: -15px;
+  width: 60%;
+  margin: auto;
+}
+
+/* The code styles the text at the bottom of the footer */
+ .footer > .bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background:  rgb(0, 29, 41); 
+  text-align: center;
+}
+
+#filter-btn, .form-control {
+  border-radius: 2px;
+}
+
+#filter-btn {
+  background-color:  rgb(0, 52, 75) !important;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: rgb(46, 93, 114);
+}
+
+
+
+
+/* input placeholder color changes */
+
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8e979f;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8e979f;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8e979f;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8e979f;
+}
+
+/* media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+  #table-area td {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  #table-area thead {
+    display: none;
+  }
+
+  #table-area tr td:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: #1b3146;
+  }
+
+  #table-area tr td:last-child {
+    margin-bottom: 20px;
+  }
+
+  #table-area tr td:last-child::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    content: " ";
+    background: aliceblue;
+  }
+
+  #table-area td {
+    font-size: 1.25em;
+  }
+
+  #table-area tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  #table-area tbody td::before {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    content: attr(data-th);
+  }
+
+  .hero h1 {
+    animation: smaller-title 1.2s forwards linear;
+    white-space: pre-line;
+  }
+
+  #ufo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 411px) {
+  h1 {
+    font-size: 40px !important;
+  }
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes smaller-title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
